@@ -1,0 +1,151 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: url('https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_1280.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Main Heading */
+h1 {
+    font-size: 48px; /* Larger font size */
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif; /* Nature-inspired font */
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    -webkit-background-clip: text; /* Apply gradient to the text */
+    background-clip: text;
+    text-transform: uppercase; /* Make the text uppercase */
+    letter-spacing: 2px; /* Add some spacing between letters */
+    padding: 10px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Soft shadow for a glowing effect */
+    animation: gradientEffect 3s linear infinite; /* Gradient animation */
+}
+
+@keyframes gradientEffect {
+    0% { background: linear-gradient(to right, #5fffa7, #95fe7b); }
+    50% { background: linear-gradient(to right, #d0bce6, #5281d1); }
+    100% { background: linear-gradient(to right, #cfff5f, #fe7b7b); }
+}
+
+/* Form Container */
+.form-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border: 2px solid #fff;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    color: #1fe73a;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background: #fff;
+    color: #333;
+}
+
+button {
+    background-color: #6a11cb;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    padding: 12px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2575fc;
+}
+
+/* Resume Container */
+.resume-container {
+    margin-top: 50px;
+    max-width: 900px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    color: #fff;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6);
+    display: none;
+    border: 2px solid #ffffff;
+}
+
+.resume-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid #42156d;
+    padding-bottom: 15px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #1310cf;
+    margin-bottom: 10px;
+}
+
+.resume-header h2 {
+    font-size: 36px;
+    margin: 0;
+    color: #ff3d3d;
+    font-family: "Anton SC", sans-serif;
+    border-bottom: 2px solid greenyellow;
+    padding-bottom: 6px;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.skills-list li::before {
+    content: "• ";
+    color: #333;
+    margin-right: 5px;
+}
+
+.resume-header p {
+    font-size: 20px;
+    color: #bbb;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+    color: #fff;
+}
+

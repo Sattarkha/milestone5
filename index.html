@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Grey+Qo&family=Honk&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Resume Builder</h1>
+        <form id="resume-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address"></textarea>
+
+            <label for="skills">Skills:</label>
+            <textarea id="skills" name="skills" placeholder="Enter your skills separated by commas"></textarea>
+
+            <label for="experience">Experience:</label>
+            <textarea id="experience" name="experience" placeholder="Describe your work experience"></textarea>
+
+            <label for="photo">Profile Picture:</label>
+            <input type="file" id="photo" accept="image/*">
+
+            <button type="button" id="generate-resume">Generate Resume</button>
+        </form>
+    </div>
+
+    <div class="resume-container" id="resume-container">
+        <h2>Your Resume:</h2>
+        <div id="generated-resume"></div>
+        
+        <!-- Shareable Link -->
+        <p>Shareable Link: <a id="shareable-link" target="_blank"></a></p>
+        
+        <!-- Download Button -->
+        <button id="download-pdf">Download as PDF</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
